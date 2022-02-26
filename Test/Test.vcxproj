@@ -79,14 +79,14 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
     <OutDir>$(SolutionDir)bin\</OutDir>
-    <IncludePath>D:\VS 19 lib\SFML-2.5.1 x64\include;$(IncludePath)</IncludePath>
-    <LibraryPath>D:\VS 19 lib\SFML-2.5.1 x64\lib;D:\Программирование\SFML\SFMLST\bin;$(LibraryPath)</LibraryPath>
+    <IncludePath>..\SFML-2.5.1 x64\include;$(IncludePath)</IncludePath>
+    <LibraryPath>..\SFML-2.5.1 x64\lib;..\bin;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>$(SolutionDir)bin\</OutDir>
-    <IncludePath>D:\VS 19 lib\SFML-2.5.1 x64\include;$(IncludePath)</IncludePath>
-    <LibraryPath>D:\VS 19 lib\SFML-2.5.1 x64\lib;D:\Программирование\SFML\SFMLST\bin;$(LibraryPath)</LibraryPath>
+    <IncludePath>..\SFML-2.5.1 x64\include;$(IncludePath)</IncludePath>
+    <LibraryPath>..\SFML-2.5.1 x64\lib;..\bin;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>

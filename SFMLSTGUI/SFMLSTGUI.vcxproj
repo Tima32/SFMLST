@@ -80,15 +80,15 @@
     <LinkIncremental>true</LinkIncremental>
     <OutDir>$(SolutionDir)bin\</OutDir>
     <ExecutablePath>$(ExecutablePath)</ExecutablePath>
-    <LibraryPath>D:\VS 19 lib\SFML-2.5.1 x64\lib;$(LibraryPath)</LibraryPath>
-    <IncludePath>D:\VS 19 lib\SFML-2.5.1 x64\include;$(IncludePath)</IncludePath>
+    <LibraryPath>..\SFML-2.5.1 x64\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>..\SFML-2.5.1 x64\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>$(SolutionDir)bin\</OutDir>
     <ExecutablePath>$(ExecutablePath)</ExecutablePath>
-    <LibraryPath>D:\VS 19 lib\SFML-2.5.1 x64\lib;$(LibraryPath)</LibraryPath>
-    <IncludePath>D:\VS 19 lib\SFML-2.5.1 x64\include;$(IncludePath)</IncludePath>
+    <LibraryPath>..\SFML-2.5.1 x64\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>..\SFML-2.5.1 x64\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
