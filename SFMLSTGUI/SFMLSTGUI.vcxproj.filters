@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Исходные файлы">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Файлы заголовков">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Исходные файлы\Button">
+      <UniqueIdentifier>{f1567612-bb54-4c97-a686-c16c759d1137}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\LineEdit">
+      <UniqueIdentifier>{54f11245-3ff4-4a63-bfdc-c1829017bb1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\CheckBox">
+      <UniqueIdentifier>{bad69836-cbdf-40e7-865a-20c81e4995f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\ProgressBar">
+      <UniqueIdentifier>{79c6043a-b116-4efb-99f8-4eb8ac3b2454}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Radio">
+      <UniqueIdentifier>{736e653e-9188-477b-87a0-2307343357ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\ScrollBar">
+      <UniqueIdentifier>{e5cff0c5-952f-4088-89c5-c827acd98de8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Slider">
+      <UniqueIdentifier>{c9898613-a86e-4432-b2b7-0c47e9ca419e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Graph">
+      <UniqueIdentifier>{bd36266f-1b20-4cd3-a30a-f3a88ab04592}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Table">
+      <UniqueIdentifier>{41827c3a-7319-49d0-9fa5-e7159138f2c5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Button\Button.cpp">
+      <Filter>Исходные файлы\Button</Filter>
+    </ClCompile>
+    <ClCompile Include="LineEdit\LineEdit.cpp">
+      <Filter>Исходные файлы\LineEdit</Filter>
+    </ClCompile>
+    <ClCompile Include="CheckBox\CheckBox.cpp">
+      <Filter>Исходные файлы\CheckBox</Filter>
+    </ClCompile>
+    <ClCompile Include="ProgressBar\ProgressBar.cpp">
+      <Filter>Исходные файлы\ProgressBar</Filter>
+    </ClCompile>
+    <ClCompile Include="Radio\Radio.cpp">
+      <Filter>Исходные файлы\Radio</Filter>
+    </ClCompile>
+    <ClCompile Include="ScrollBar\ScrollBar.cpp">
+      <Filter>Исходные файлы\ScrollBar</Filter>
+    </ClCompile>
+    <ClCompile Include="Slider\Slider.cpp">
+      <Filter>Исходные файлы\Slider</Filter>
+    </ClCompile>
+    <ClCompile Include="Graph\FunctionGraph.cpp">
+      <Filter>Исходные файлы\Graph</Filter>
+    </ClCompile>
+    <ClCompile Include="Table\Table.cpp">
+      <Filter>Исходные файлы\Table</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Button\Button.hpp">
+      <Filter>Исходные файлы\Button</Filter>
+    </ClInclude>
+    <ClInclude Include="ImportExport.h">
+      <Filter>Исходные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="LineEdit\LineEdit.hpp">
+      <Filter>Исходные файлы\LineEdit</Filter>
+    </ClInclude>
+    <ClInclude Include="CheckBox\CheckBox.hpp">
+      <Filter>Исходные файлы\CheckBox</Filter>
+    </ClInclude>
+    <ClInclude Include="dllmain.h">
+      <Filter>Исходные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="ProgressBar\ProgressBar.hpp">
+      <Filter>Исходные файлы\ProgressBar</Filter>
+    </ClInclude>
+    <ClInclude Include="Radio\Radio.h">
+      <Filter>Исходные файлы\Radio</Filter>
+    </ClInclude>
+    <ClInclude Include="ScrollBar\ScrollBar.hpp">
+      <Filter>Исходные файлы\ScrollBar</Filter>
+    </ClInclude>
+    <ClInclude Include="Slider\Slider.hpp">
+      <Filter>Исходные файлы\Slider</Filter>
+    </ClInclude>
+    <ClInclude Include="Graph\FunctionGraph.hpp">
+      <Filter>Исходные файлы\Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="Table\Table.hpp">
+      <Filter>Исходные файлы\Table</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector2.hpp">
+      <Filter>Исходные файлы</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
