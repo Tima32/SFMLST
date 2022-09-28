@@ -412,6 +412,12 @@ const sf::Font* SliderEditHorizontal::getFont() const
 	return text_t.getFont();
 }
 
+//callbacks
+void SliderEditHorizontal::setChangeValueEndCallback(ChangeValueEndCallback change_value_end_callback)
+{
+	this->change_value_end_callback = change_value_end_callback;
+}
+
 bool SliderEditHorizontal::event(const sf::Event& event, bool& focus)
 {
 	Vector2f c_pos(-1, -1); //позиция курсора
@@ -489,6 +495,8 @@ bool SliderEditHorizontal::event(const sf::Event& event, bool& focus)
 			try {
 				double v = std::stod(line_edit.getString().toAnsiString().c_str());
 				setValue(v);
+				if (change_value_end_callback)
+					change_value_end_callback(*this, value);
 			}
 			catch (...)
 			{
@@ -502,9 +510,15 @@ bool SliderEditHorizontal::event(const sf::Event& event, bool& focus)
 		{
 			double offset = (double)c_pos.x - pressed_pos.x;
 			double coefficent = double(max - min) / ((double)size.x - 4 - slider_size);
-			setValue(move_value + (double)offset * coefficent);
+			auto value{ move_value + (double)offset * coefficent };
+			setValue(value);
+			if (change_value_end_callback)
+				change_value_end_callback(*this, value);
 			ret = true;
 		}
+
+		if (pressed && change_value_end_callback)
+			change_value_end_callback(*this, value);
 
 		pressed = false;
 	}
@@ -517,7 +531,7 @@ bool SliderEditHorizontal::event(const sf::Event& event, bool& focus)
 		ret = true;
 	}
 
-	//отправка событий сьроке
+	//отправка событий строке
 	if (enter)
 	{
 		bool focus = false;

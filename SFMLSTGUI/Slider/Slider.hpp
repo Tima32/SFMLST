@@ -109,6 +109,10 @@ namespace st
 		void setFont(const sf::Font& font);
 		const sf::Font* getFont() const;
 
+		//callbacks
+		typedef std::function<void(SliderEditHorizontal& seh, double value)> ChangeValueEndCallback;
+		void setChangeValueEndCallback(ChangeValueEndCallback change_value_end_callback);
+
 		bool event(const sf::Event& event, bool& focus);
 
 		void draw(sf::RenderTarget& target, sf::RenderStates states) const override;
@@ -136,5 +140,8 @@ namespace st
 		bool enter;
 		sf::Vector2f pressed_pos;
 		double move_value;
+
+		//callbacks
+		ChangeValueEndCallback change_value_end_callback{ nullptr };
 	};
 }

@@ -3,7 +3,12 @@
 	#define SF_ST_GUI_EXPORT __declspec(dllexport)
 #else
 	#define SF_ST_GUI_EXPORT __declspec(dllimport)
-	#pragma comment(lib,"SFMLSTGUI.lib")
+
+	#ifdef _WIN64
+		#pragma comment(lib,"SFMLSTGUIx64.lib")
+	#else
+		#pragma comment(lib,"SFMLSTGUIx32.lib")
+	#endif
 #endif
 
 // For Visual C++ compilers, we also need to turn off this annoying C4251 warning

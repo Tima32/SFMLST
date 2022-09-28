@@ -434,11 +434,7 @@ sf::String Table::toCharIndex(size_t num) const
 	wchar_t buffer[256];
 	
 	errno_t error;
-#ifdef _WIN64
 	error = _ui64tow_s(num, buffer, 256, base);
-#else
-	error = _ui32tow_s(num, buffer, size, base);
-#endif
 
 	if (error)
 		return String();
